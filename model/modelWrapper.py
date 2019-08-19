@@ -35,9 +35,7 @@ if ms.getRequestDataFlag() == ERequestResponseDataFlag.ERDF_OK:
     if ms.getRequestDataMIME() == ERequestResponseDataMIME.ERDM_ZIP_FILE:
         rapid_io_files = ms.getRequestDataBody()
         ms.mapZipToCurrentDataDirectory(rapid_io_files)
-        #get current data directory
-        # rapid_io_files_folder= ms.getCurrentDataDirectory()
-        # print(rapid_io_files_folder)
+        # Current data directory : ~/mainProcess/rapid_io_files/
 else:
     ms.onFinalize()
 
@@ -53,8 +51,7 @@ if ms.getRequestDataFlag() == ERequestResponseDataFlag.ERDF_OK:
     if ms.getRequestDataMIME() == ERequestResponseDataMIME.ERDM_ZIP_FILE:
         lsm_data = ms.getRequestDataBody()
         ms.mapZipToCurrentDataDirectory(lsm_data)
-        # lsm_data_folder = ms.getCurrentDataDirectory()
-        # print(lsm_data_folder)
+        # Current data directory : ~/mainProcess/lsm_data/
 else:
     ms.onFinalize()
 
@@ -67,7 +64,9 @@ python_file = None
 if ms.getRequestDataFlag() == ERequestResponseDataFlag.ERDF_OK:
     if ms.getRequestDataMIME() == ERequestResponseDataMIME.ERDM_RAW_FILE:
         python_file = ms.getRequestDataBody()
+        # map uploaded file to current directory and change back to its original name
         ms.mapFileToCurrentDataDirectory(python_file, "run_rapid.py")
+        # Current data directory : ~/mainProcess/python_file/
 else:
     ms.onFinalize()
 
@@ -79,9 +78,9 @@ ms.setResponseDataFlag(ERequestResponseDataFlag.ERDF_OK)
 ms.setResponseDataMIME(ERequestResponseDataMIME.ERDM_RAW_FILE)
 
 result_folder = ms.getCurrentDataDirectory()
-print(result_folder)
+# Current data directory : ~/mainProcess/steamflow/
 
-#docker run --name rapidpy -w /home/python_file -v /home/sherry/Downloads/rapid_test_data:/home xhqiao89/rapidpy:1.0 python run_rapid.py
+#docker run --name rapidpy -w /home/python_file -v ~/mainProcess:/home xhqiao89/rapidpy:1.0 python run_rapid.py
 mycmd = "docker run --rm --name rapidpy -w /home/python_file -v " + state_folder + ":/home xhqiao89/rapidpy:1.0 python run_rapid.py"
 print(mycmd)
 os.system(mycmd)
