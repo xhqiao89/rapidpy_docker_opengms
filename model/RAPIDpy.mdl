@@ -6,7 +6,7 @@
     </Categories>
     <LocalAttributes>
       <LocalAttribute local="EN_US" localName="RAPIDpy" wiki="https://rapidpy.readthedocs.io/en/latest/index.html">
-        <Keywords>RAPID, Python, River routing, Streamflow</Keywords>
+        <Keywords>RAPID, Python, Vector-based River routing, Streamflow</Keywords>
         <Abstract>RAPIDpy is a python interface for RAPID that assists to prepare inputs, runs the RAPID program, and provides post-processing utilities. More information about installation and the input parameters for RAPID can be found at http://rapid-hub.org. The source code for RAPID is located at https://github.com/c-h-david/rapid.</Abstract>
       </LocalAttribute>
     </LocalAttributes>
@@ -24,16 +24,16 @@
     <StateGroup>
       <States>
         <State id="fcc8f325-d65b-4bb4-9efa-5ec733809bc6" name="mainProcess" type="basic" description="Prepare inputs and run RAPID">
-          <Event name="rapid_io_files" type="response" optional="False" description="Required rapid input files (zipped)">
+          <Event name="rapid_io_files" type="response" optional="False" description="Required rapid input parameter files (zipped). Including Muskingum k and x, comid_lat_lon_z.csv, rapid_connect.csv, and the weight table generated from the forcing">
             <ResponseParameter datasetReference="Text_Template" description="input rapid files" />
           </Event>
-          <Event name="lsm_data" type="response" optional="False" description="The forcing files(zipped)">
+          <Event name="lsm_data" type="response" optional="False" description="The runoff forcing NetCDF files (zipped)">
             <ResponseParameter datasetReference="Text_Template" description="Forcing files" />
           </Event>
-          <Event name="python_file" type="response" optional="False" description="The Python file">
+          <Event name="python_file" type="response" optional="False" description="The Python file to launch RAPIDpy">
             <ResponseParameter datasetReference="Text_Template" description="Python file" />
           </Event>
-          <Event name="streamflow" type="noresponse" optional="False" description="Output streamflow of each reach">
+          <Event name="streamflow" type="noresponse" optional="False" description="The streamflow at each reach">
             <DispatchParameter datasetReference="NetCDF_Template" description="Streamflow" />
           </Event>
         </State>
