@@ -1,13 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<ModelClass name="RAPIDpy" uid="e44c5d50-22ae-44d2-b633-946d866a683e" style="SimpleCalculation">
+<ModelClass name="Streamflow Prediction Service" uid="e44c5d50-22ae-44d2-b633-946d866a683e" style="SimpleCalculation">
   <AttributeSet>
     <Categories>
-      <Category principle="RAPIDpy" path="RAPIDpy" />
+      <Category principle="Streamflow Prediction Service" path="SPT" />
     </Categories>
     <LocalAttributes>
-      <LocalAttribute local="EN_US" localName="RAPIDpy" wiki="https://rapidpy.readthedocs.io/en/latest/index.html">
+      <LocalAttribute local="EN_US" localName="Streamflow Prediction Service" wiki="https://tethys.byu.edu/apps/streamflowservices/">
         <Keywords>RAPID, Python, Vector-based River routing, Streamflow</Keywords>
-        <Abstract>RAPIDpy is a python interface for RAPID that assists to prepare inputs, runs the RAPID program, and provides post-processing utilities. More information about installation and the input parameters for RAPID can be found at http://rapid-hub.org. The source code for RAPID is located at https://github.com/c-h-david/rapid.</Abstract>
+        <Abstract>This service is originated from an automated streamflow prediction system to map the runoff generated from large-scale grid-based land surface models (LSMs) onto high-resolution
+        vector-based stream networks, then route the results using the Routing Application for Parallel computatIon Discharge (RAPID), a vector-based river routing model called RAPID, and provide streamflow forecast at river level.
+        The dockerized system can be found at https://cloud.docker.com/repository/docker/xhqiao89/rapidpy.</Abstract>
       </LocalAttribute>
     </LocalAttributes>
   </AttributeSet>
