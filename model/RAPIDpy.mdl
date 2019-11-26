@@ -26,16 +26,16 @@
     <StateGroup>
       <States>
         <State id="fcc8f325-d65b-4bb4-9efa-5ec733809bc6" name="mainProcess" type="basic" description="Prepare inputs and run RAPID">
-          <Event name="rapid_io_files" type="response" optional="False" description="Required rapid input parameter files (zipped). Including Muskingum k and x, comid_lat_lon_z.csv, rapid_connect.csv, and the weight table generated from the forcing">
+          <Event name="rapid_io_files" type="response" optional="False" description="Zipped all the required rapid input parameter files (only files, without any folder). Including Muskingum k and x, comid_lat_lon_z.csv, rapid_connect.csv, and the weight table generated from the forcing">
             <ResponseParameter datasetReference="Text_Template" description="input rapid files" />
           </Event>
-          <Event name="lsm_data" type="response" optional="False" description="The runoff forcing NetCDF files (zipped)">
+          <Event name="lsm_data" type="response" optional="False" description="Zipped runoff forcing NetCDF files">
             <ResponseParameter datasetReference="Text_Template" description="Forcing files" />
           </Event>
           <Event name="python_file" type="response" optional="False" description="The Python file to launch RAPIDpy">
             <ResponseParameter datasetReference="Text_Template" description="Python file" />
           </Event>
-          <Event name="streamflow" type="noresponse" optional="False" description="The streamflow at each reach">
+          <Event name="streamflow" type="noresponse" optional="False" description="A netcdf file with streamflow at each reach">
             <DispatchParameter datasetReference="NetCDF_Template" description="Streamflow" />
           </Event>
         </State>

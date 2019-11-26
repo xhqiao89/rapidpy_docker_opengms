@@ -9,6 +9,8 @@ from modeldatahandler import ModelDataHandler
 
 import sys
 import os
+import random
+import string
 
 # Begin
 if len(sys.argv) < 4:
@@ -80,8 +82,10 @@ ms.setResponseDataMIME(ERequestResponseDataMIME.ERDM_RAW_FILE)
 result_folder = ms.getCurrentDataDirectory()
 # Current data directory : ~/mainProcess/steamflow/
 
+image_random_id = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(8)])
 #docker run --name rapidpy -w /home/python_file -v ~/mainProcess:/home xhqiao89/rapidpy:1.0 python run_rapid.py
-mycmd = "docker run --rm --name rapidpy -w /home/python_file -v " + state_folder + ":/home xhqiao89/rapidpy:1.0 python run_rapid.py"
+mycmd = "docker run --rm --name rapidpy_"+image_random_id+" -w /home/python_file -v " + state_folder + ":/home xhqiao89/rapidpy:1.0 python run_rapid.py"
+
 print(mycmd)
 os.system(mycmd)
 
