@@ -1,6 +1,7 @@
 ## Streamflow Prediction Web Service
 #### This is the source code for publishing the Dockerized streamflow prediction system as a web service in OpenGMS Wrapper System (OGMS-WS). 
-#### The dockerized streamflow prediction model can be found at: https://hub.docker.com/r/xhqiao89/rapidpy
+#### The dockerized streamflow prediction model can be found at: https://hub.docker.com/r/xhqiao89/rapidpy. Detailed introduction on the streamflow prediction model can be found in this paper: https://doi.org/10.1016/j.envsoft.2019.104501.
+
 #### This figure shows the encapsulatiztion method.
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/2.png?raw=true)
 
