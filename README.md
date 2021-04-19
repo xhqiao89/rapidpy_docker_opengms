@@ -9,3 +9,4 @@
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/1.png?raw=true)
 
 #### A set fo TEST data is provided in the "testify" folder, including a "data.zip" for "LSM_DATA", a "input.zip" for "RAPID_IO_FILES", and a "run_rapid.py" for "PYTHON_FILE". 
+![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/InputsOutputs.png?raw=true)
