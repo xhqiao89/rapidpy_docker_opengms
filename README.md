@@ -8,4 +8,4 @@
 #### The SPT.zip file is the ready-to-use encapsulatized package to deploy the streamflow prediction service in OGMS-WS. You can directly download it from here and upload it to OGMS-WS server through the "Deployment" module shown as below.
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/1.png?raw=true)
 
-### A set fo TEST data is provided in the "testify" folder, including a "data.zip" for "LSM_DATA", a "input.zip" for "RAPID_IO_FILES", and a "run_rapid.py" for "PYTHON_FILE". 
+#### A set fo TEST data is provided in the "testify" folder, including a "data.zip" for "LSM_DATA", a "input.zip" for "RAPID_IO_FILES", and a "run_rapid.py" for "PYTHON_FILE". 
