@@ -14,6 +14,7 @@
 
 #### The service is deployed by uploading the zipped encapsulated model package to the ‘Deployment’ module in OGMS-WS. You can directly download the SPT.zip file from here and upload it to OGMS-WS server through the "Deployment" module shown as below.
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/1.png =100x20)
+<img src="hhttps://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/1.png" width="48">
 
 #### A set fo TEST data is provided in the "testify" folder, including a "data.zip" for "LSM_DATA", a "input.zip" for "RAPID_IO_FILES", and a "run_rapid.py" for "PYTHON_FILE". 
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/InputsOutputs.png)
