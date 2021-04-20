@@ -5,7 +5,9 @@
 
 #### Detailed instruction on hwo to publish web services through OGMS-WS can be found at https://geomodeling.njnu.edu.cn/Development/doc. 
 
-#### The dockerized streamflow prediction model can be found at: https://hub.docker.com/r/xhqiao89/rapidpy. Detailed introduction on the streamflow prediction model can be found in this paper: https://doi.org/10.1016/j.envsoft.2019.104501.
+#### The dockerized streamflow prediction model can be found at: https://hub.docker.com/r/xhqiao89/rapidpy. 
+
+#### Detailed introduction on the streamflow prediction model can be found in this paper: https://doi.org/10.1016/j.envsoft.2019.104501.
 
 #### This figure shows the encapsulatiztion method.
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/2.png?raw=true)
