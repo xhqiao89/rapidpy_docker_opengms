@@ -1,6 +1,9 @@
 ## Streamflow Prediction Web Service
-#### This is the source code for publishing the Dockerized streamflow prediction system as a web service in OpenGMS Wrapper System (OGMS-WS). OpenGMS is a platform for sharing geographic and environmental data and models among multi-disciplinary users. OGMS-WS is an open source software tool in OpenGMS platform used to publish models as web services. It uses a standardized method to encapsulate models and deploy them as RESTful web services ![image](https://user-images.githubusercontent.com/13894631/115332083-c2ab4700-a15c-11eb-9ea1-010b01045bdd.png)
-Instructions on publishing web services through OGMS-WS can be found at https://geomodeling.njnu.edu.cn/Development/doc.
+#### This is the source code for publishing the Dockerized streamflow prediction system as a web service in OpenGMS Wrapper System (OGMS-WS). OpenGMS is a platform for sharing geographic and environmental data and models among multi-disciplinary users. OGMS-WS is an open source software tool in OpenGMS platform used to publish models as web services. It uses a standardized method to encapsulate models and deploy them as RESTful web services.
+
+#### The OGMS-WS software tool can be downloaded from https://geomodeling.njnu.edu.cn/Development/download (Tools->Model Service Container).
+
+#### Detailed instruction on hwo to publish web services through OGMS-WS can be found at https://geomodeling.njnu.edu.cn/Development/doc. 
 
 #### The dockerized streamflow prediction model can be found at: https://hub.docker.com/r/xhqiao89/rapidpy. Detailed introduction on the streamflow prediction model can be found in this paper: https://doi.org/10.1016/j.envsoft.2019.104501.
 
