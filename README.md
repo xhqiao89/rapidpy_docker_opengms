@@ -10,11 +10,10 @@
 #### Detailed introduction on the streamflow prediction model can be found in this paper: https://doi.org/10.1016/j.envsoft.2019.104501.
 
 #### This figure shows the folder structure of the encapsulated streamflow prediction model package. The model encapsulation file defines the interaction between users and the model service, including accepting requests from users and extracting model inputs, invoking and executing the model, and returning model outputs as responses to users when completed. Model-related files include the model executable files or scripts (model folder), dependency libraries that support model execution (assembly folder), model running instances (instance folder), environment dependencies for model encapsulation (supportive folder), and model test data (testify folder).
-![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/2.png =100x20)
+![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/2.png)
 
 #### The service is deployed by uploading the zipped encapsulated model package to the ‘Deployment’ module in OGMS-WS. You can directly download the SPT.zip file from here and upload it to OGMS-WS server through the "Deployment" module shown as below.
-![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/1.png =100x20)
-<img src="hhttps://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/1.png" width="48">
+![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/1.png)
 
 #### A set fo TEST data is provided in the "testify" folder, including a "data.zip" for "LSM_DATA", a "input.zip" for "RAPID_IO_FILES", and a "run_rapid.py" for "PYTHON_FILE". 
 ![alt text](https://github.com/xhqiao89/rapidpy_docker_opengms/blob/master/pics/InputsOutputs.png)
